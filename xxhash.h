@@ -4186,7 +4186,8 @@ XXH3_generateSecret(void* secretBuffer, const void* customSeed, size_t customSee
     if (customSeedSize == 8) {
         const XXH64_canonical_t* const seedCanon = (const XXH64_canonical_t*)customSeed;
         XXH64_hash_t const seed64 = XXH64_hashFromCanonical(seedCanon);
-        XXH3_initCustomSecret(secretBuffer, seed64);
+        //XXH3_initCustomSecret(secretBuffer, seed64);
+        memcpy(secretBuffer, XXH3_kSecret, XXH_SECRET_DEFAULT_SIZE);
         return;
     }
 

@@ -13,6 +13,6 @@ cc_library(
     hdrs = glob([
         "*.h",
         ]),
-    copts = ["-Iexternal/xxHash"],
-    includes = ["xxHash"],
+    copts = ["-Iexternal/xxHash", "-Iexternal/xxhash"],
+    includes = ["xxHash", "xxhash"],
 )

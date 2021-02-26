@@ -20,10 +20,4 @@ cc_library(
         "-Iexternal/xxHash",
         "-Iexternal/xxhash",
         ],
-    includes = [
-        "external/xxHash", 
-        "external/xxhash",
-        "xxhash",
-        "xxHash",
-        ],
 )

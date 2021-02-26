@@ -6,6 +6,9 @@ cc_library(
         "*.c",
         "*.h",
         "*.cc",
+        "cli/*.c",
+        "cli/*.h",
+        "cli/*.cc",
         ]),
     hdrs = glob([
         "*.h",

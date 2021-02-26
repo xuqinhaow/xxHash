@@ -15,6 +15,6 @@ cc_library(
         "xxHash/*.h",
         "xxhash/*.h"
         ]),
-    copts = ["-Iexternal/xxHash", "-Iexternal/xxhash"],
-    includes = ["xxHash", "xxhash"],
+    copts = ["-Icli"],
+    includes = ["external/xxHash", "external/xxhash"],
 )
